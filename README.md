@@ -1,4 +1,4 @@
-# cc-init - Claude Code Project Generator
+# cc - Claude Code Project Generator
 
 A standalone CLI application for generating repository structures and boilerplate code optimized for [Claude Code](https://docs.anthropic.com/en/docs/claude-code) development. This tool helps bootstrap new projects or integrate Claude Code features into existing repositories.
 
@@ -22,10 +22,10 @@ git clone <repository-url>
 cd cc
 
 # Build the binary
-go build -o cc-init
+go build -o cc
 
 # Move to your PATH (optional)
-sudo mv cc-init /usr/local/bin/
+sudo mv cc /usr/local/bin/
 ```
 
 ## Usage
@@ -34,11 +34,11 @@ This application is currently in development. The planned usage will be:
 
 ```bash
 # Create a new project (planned)
-cc-init new <project-name> --type=<project-type> --github=<username>
+cc new <project-name> --type=<project-type> --github=<username>
 
 # Integrate into existing project (planned)  
 cd existing-project
-cc-init integrate --type=<project-type> --github=<username>
+cc integrate --type=<project-type> --github=<username>
 ```
 
 ## Planned Project Types
@@ -135,8 +135,8 @@ cc/
 git clone <repository-url>
 cd cc
 go mod tidy
-go build -o cc-init
-./cc-init --help
+go build -o cc
+./cc --help
 ```
 
 ### Contributing
